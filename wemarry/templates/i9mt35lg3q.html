@@ -144,11 +144,6 @@
     $(function () {
         gallery_url_set(gallery_url);
 
-        $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function () {
-            var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
-            location.href = img_url;
-        });
-
         calendar_set(mname, wname, weddingDate);
 
         map_set(lat, lng);
