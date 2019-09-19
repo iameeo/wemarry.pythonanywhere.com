@@ -1,5 +1,22 @@
-<form method="POST">
-    {% csrf_token %}
-    <input type="text" name="url" />
-    <input type="submit" value="submit" />
-</form>
+<div style="width:350px;margin:0 auto;">
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="url" />
+            <input type="submit" value="submit" />
+        </form>
+    </div>
+
+    <div class="result" style="display:none;">1</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(function() {
+        var url = window.location.href;
+        if (url.indexOf("?data") > -1) {
+            var urlArry = url.split('=');
+            $(".result").text(urlArry[1]).show();
+        }
+    });
+</script>
