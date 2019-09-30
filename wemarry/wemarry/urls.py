@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.conf.urls import url
 from django.urls import path
 
-from blog.views import index, naverShortUrl, j45ljmm5ec, i9mt35lg3q
+from blog.views import index, naverShortUrl, j45ljmm5ec, i9mt35lg3q, zvtqkh1khz
 
 urlpatterns = [
     url(r'^$', index),
     url(r'^naverShortUrl/$', naverShortUrl),
     url(r'^j45ljmm5ec/$', j45ljmm5ec),
     url(r'^i9mt35lg3q/$', i9mt35lg3q),
+    url(r'^zvtqkh1khz/$', zvtqkh1khz),
 ]
