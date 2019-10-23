@@ -67,3 +67,7 @@ def zvtqkh1khz(request):
         context = {}
         return render(request, 'zvtqkh1khz.html', context)
     
+def hcju79b6wj(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'hcju79b6wj.html', context)
