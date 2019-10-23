@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>무료 모바일 초대장 - 「어반인카드」 여기서 하길 참말로 잘했다.</title>
+    <meta charset="utf-8">
+    <meta name="naver-site-verification" content="b01b1b91d9bde76e2d2bfe1c4e7f5d53fb970316" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="https://wemarry.pythonanywhere.com/media/web_share.jpg" />
+    <meta property="og:title" content="무료 모바일 초대장 - 「어반인카드」 여기서 하길 참말로 잘했다." />
+    <meta property="og:description" content="무료 모바일 초대장 - 「어반인카드」 여기서 하길 참말로 잘했다." />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/swiper.min.css">
+    <!--Calendar's CSS -->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/simple-calendar.css">
+    <!--Common's CSS-->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            header
+        </div>
+        <div class="contents">
+            {% block content %} {% endblock %}
+        </div>
+        <div class="footer">
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="https://urban-incard.github.io/" target="_blank"><img src="https://urban-incard.github.io/images/ui_logo.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="https://smartstore.naver.com/urbanincard" target="_blank"><img src="https://urban-incard.github.io/images/nv_logo.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/urban.incard/" target="_blank"><img src="https://urban-incard.github.io/images/ig_logo.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="txt">
+                모바일 초대장/청첩장은 어반인카드
+                <br /> ⓒ URBAN-INCARD Corp. All Rights Reserved
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//www.googletagmanager.com/gtag/js?id=UA-124498612-2"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c8dcf002e3cb41a603da7f0d485b5f0b"></script>
+<script src="https://urban-incard.github.io/common/swiper.min.js"></script>
+<script src="https://urban-incard.github.io/common/script.js"></script>
+<script>
+    $(function() {});
+</script>
+
+</html>

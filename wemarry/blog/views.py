@@ -3,6 +3,8 @@ from django.core.mail import EmailMessage
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 
+from blog.models import Free
+
 import os
 import sys
 import json
@@ -13,6 +15,13 @@ def index(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'index.html', context)
+
+def freeDetail(request, pk):
+    free = Free.objects.get(pk=pk)
+    context = {
+        'free': free
+    }
+    return render(request, 'free/index.html', context)
 
 def naverShortUrl(request):
     if request.method == 'POST':
