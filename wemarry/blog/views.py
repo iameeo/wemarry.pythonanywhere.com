@@ -71,3 +71,8 @@ def hcju79b6wj(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'hcju79b6wj.html', context)
+
+def bdd2j7z4jm(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'bdd2j7z4jm.html', context)
