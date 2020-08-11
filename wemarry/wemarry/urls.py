@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.conf.urls import url
 from django.urls import path
 
-from blog.views import index, freeDetail, naverShortUrl, j45ljmm5ec, i9mt35lg3q, zvtqkh1khz, hcju79b6wj, bdd2j7z4jm
+from blog.views import index, freeDetail, naverShortUrl, j45ljmm5ec, i9mt35lg3q, zvtqkh1khz, hcju79b6wj, bdd2j7z4jm, x63w3nobli
 
 urlpatterns = [
     url(r'^$', index),
@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^zvtqkh1khz/$', zvtqkh1khz),
     url(r'^hcju79b6wj/$', hcju79b6wj),
     url(r'^bdd2j7z4jm/$', bdd2j7z4jm),
+    url(r'^x63w3nobli/$', x63w3nobli),
 ]

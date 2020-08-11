@@ -76,3 +76,8 @@ def bdd2j7z4jm(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'bdd2j7z4jm.html', context)
+
+def x63w3nobli(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'x63w3nobli.html', context)
