@@ -82,10 +82,26 @@
                     행복하게 잘 살겠습니다.
                 </div>
                 <div class="name">
-                    상록.예림<br /> 올림
+                    <div>
+                        <span style="font-size:14px;">신랑 박상록</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:010-2021-4074"><img src="//cdn.icon-icons.com/icons2/1249/PNG/256/dialer-284_84338.png" style="width:20px;height:20px;vertical-align:middle;" /></a>
+                        <a href="sms:010-2021-4074"><img src="https://cdn.icon-icons.com/icons2/1249/PNG/256/sms-284_84336.png" style="width:20px;height:20px;vertical-align:middle;" /></a>
+                    </div>
+                    <div style="padding-top:10px;">
+                        <span style="font-size:14px;">신부 이예림</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:010-7211-5622"><img src="https://cdn.icon-icons.com/icons2/1249/PNG/256/dialer-284_84338.png" style="width:20px;height:20px;vertical-align:middle;filter: hue-rotate(180deg);" /></a>
+                        <a href="sms:010-7211-5622"><img src="https://cdn.icon-icons.com/icons2/1249/PNG/256/sms-284_84336.png" style="width:20px;height:20px;vertical-align:middle;filter: hue-rotate(180deg);" /></a>
+                    </div>
                 </div>
                 <div class="parent">
                     박학순.김윤숙의 아들 상록<br /> 이종국.박미선의 딸 예림<br />
+                </div>
+                <div class="parent_money" style="font-size: 14px;    text-align: center;    padding: 0px 0px;font-weight:bold;">
+                    참석이 어려우신 분들은<br/>
+                    축하의 마음을 전해주세요.<br/>
+                    <img src="https://urban-incard.github.io/type2/2_top.png" style="width:30px;padding:30px;"/><br/>
+                    <a href="javascript:virtual('신한은행 510-06-109534(박학순)');" style="color:#1ebc91;text-decoration:none;font-weight:bold;">신랑측 혼주 계좌번호</a> &nbsp; <a href="javascript:virtual('');" style="color:#ff6b9f;text-decoration:none;font-weight:bold;">신부측 혼주 계좌번호</a>
+                    <div class="virtual_wrap" style="padding:10px 0px;font-weight:bold;"></div>
                 </div>
             </div>
             <div class="title">
@@ -163,6 +179,11 @@
 
         $(".month").css("font-size","26px")
     });
+    
+    function virtual(msg){
+        $(".virtual_wrap").html(msg);
+    }
+    
 </script>
 
 </html>
