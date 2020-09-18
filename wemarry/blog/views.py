@@ -86,3 +86,8 @@ def ixjwgfi51r(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'ixjwgfi51r.html', context)
+
+def su36ouypf7(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'su36ouypf7.html', context)
