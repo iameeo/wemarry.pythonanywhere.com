@@ -91,3 +91,8 @@ def su36ouypf7(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'su36ouypf7.html', context)
+
+def rmb0wcsenb(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'rmb0wcsenb.html', context)
