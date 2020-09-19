@@ -67,11 +67,12 @@
     <div class="wrap">
         <div class="header">
             <div class="top">
-                <div class="name" style="font-size:20px;">
-                    깊어가는 가을의 길목에서<br/>신구 그리고 가람<br/>결혼합니다
+                <div class="name" style="font-size:18px;">
+                    깊어가는 가을의 길목에서<br/><span style="font-size:21px;font-weight: bold;">신구</span> 그리고 <span style="font-size:21px;font-weight: bold;">가람</span><br/>결혼합니다
                 </div>
                 <div class="pos">
-                    저희 결혼식에 초대합니다.<br />2020.10.17. AM 12:00<br />레노스 블랑쉬 - 블랑쉬 단독홀 2F
+                    레노스블랑쉬 / 블랑쉬 단독홀 2F<br />
+                    2020.10.17 (토) 12am
                 </div>
 
                 <div class="object">
@@ -85,7 +86,7 @@
         </div>
         <div class="contents">
             <div class="information">
-                <div class="title">
+                <div class="title" style="padding:10px;">
                     <h2>INVITATION</h2>
                 </div>
                 <div class="info">
@@ -111,10 +112,10 @@
                         <a href="sms:010-8221-1328"><img src="/media/sms-284_84336.png" style="width:20px;height:20px;vertical-align:middle;filter: hue-rotate(180deg);" /></a>
                     </div>
                 </div>
-                <div class="parent">
-                    최재복.김춘자의 장남 최신구<br /> 송광재.손성희의 장녀 송가람<br />
+                <div class="parent" style="font-size:14px;">
+                    최재복.김춘자의 <span style="font-weight: bold;font-size:13px;">장남</span> 최신구<br /> 송광재.손성희의 <span style="font-weight: bold;font-size:13px;">장녀</span> 송가람<br />
                 </div>
-                <div class="parent" style="overflow:hidden;padding-top:0px;">
+                <div class="parent" style="overflow:hidden;padding-top:10px;">
                     <div style="float:left;width:50%;">
                         <div style="font-weight: bold;padding:5px;font-size:16px;">신랑측 혼주</div>
                         <div>
@@ -168,8 +169,49 @@
                 <div id="map"></div>
                 <div class="map_info">
                     <span>서울특별시 성동구 행당동 319-36</span><br />
-                    <span class="addr">레노스 블랑쉬 - 블랑쉬 단독홀 2F</span><br /><br />
+                    <span class="addr">레노스블랑쉬 / 블랑쉬 단독홀 2F</span><br /><br />
                     <span>02-2295-9925</span>
+                </div>
+                <style>
+                    .map_text {}
+
+                    .map_text span {
+                        padding: 5px 0px;
+                        display: block;
+                        font-weight: bold;
+                    }
+
+                    .map_text span,
+                    p {
+                        font-size: 14px;
+                    }
+                </style>
+                <div class="map_text" style="padding:30px;font-size:14px;padding-top:0px;">
+                    <div style="font-weight: bold;">
+                        교통편 안내
+                    </div>
+                    <div>
+                        <span>지하철</span>
+                        <p>
+                            - 2 호선, 5 호선, 중앙선, 분당선 : 왕십리역 하차<br />⑨ 번출구(도보로 3 분 거리 직진)<br />
+                            - 5 호선 : 행당 역 하차 3 번출구 (도보로 3 분 거리 직진)<br /><br />
+                        </p>
+                    </div>
+                    <div>
+                        <span>버스 (무학 여고 하차)</span>
+                        <p>
+                            지선 (초록) : 2016, 2220, 2411<br/>
+                            간선 (파랑) : 110A, 141, 145, 148, 241A, 241B, 421<br/>
+                            마을 버스 : 02, 03. 08, 11<br/>
+                            공항 버스 : 6010 (인천)
+                        </p>
+                    </div>
+                    <div style="padding:10px 0px;">
+                        <span>주차장 안내</span>
+                        <p>
+                            행사 일은 교통이 혼잡 하오니, 대중 교통을 이용해 주시면 감사하겠습니다.<br /><br />
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,7 +247,7 @@
 
         $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function () {
             var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
-            //location.href = img_url;
+            location.href = img_url;
         });
 
         calendar_set(mname, wname, weddingDate);
