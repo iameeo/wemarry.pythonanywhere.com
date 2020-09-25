@@ -96,3 +96,8 @@ def rmb0wcsenb(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'rmb0wcsenb.html', context)
+
+def jz0q1ec0ft(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'jz0q1ec0ft.html', context)
