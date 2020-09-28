@@ -101,3 +101,8 @@ def jz0q1ec0ft(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'jz0q1ec0ft.html', context)
+
+def kngfl72t8a(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'kngfl72t8a.html', context)
