@@ -136,3 +136,13 @@ def btpysvz4te(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'btpysvz4te.html', context)
+
+def y5ongtfol7(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'y5ongtfol7.html', context)
+
+def btpysvz4te(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'btpysvz4te.html', context)
