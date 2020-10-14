@@ -137,12 +137,12 @@ def btpysvz4te(request):
         context = {}
         return render(request, 'btpysvz4te.html', context)
 
-def y5ongtfol7(request):
+def pbi8utll1m(request):
     if request.method == 'GET':
         context = {}
-        return render(request, 'y5ongtfol7.html', context)
+        return render(request, 'pbi8utll1m.html', context)
 
-def btpysvz4te(request):
+def w5xikllbx8(request):
     if request.method == 'GET':
         context = {}
-        return render(request, 'btpysvz4te.html', context)
+        return render(request, 'w5xikllbx8.html', context)
