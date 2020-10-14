@@ -180,13 +180,7 @@
             <div class="sns">
                 <ul>
                     <li>
-                        <a href="https://urban-incard.github.io/" target="_blank"><img src="https://urban-incard.github.io/images/ui_logo.jpg"></a>
-                    </li>
-                    <li>
-                        <a href="https://smartstore.naver.com/urbanincard" target="_blank"><img src="https://urban-incard.github.io/images/nv_logo.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/urban.incard/" target="_blank"><img src="https://urban-incard.github.io/images/ig_logo.png"></a>
+                        <a id="kakao-link-btn" href="javascript:sendLink()"><img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /></a>
                     </li>
                 </ul>
             </div>
@@ -200,6 +194,7 @@
 
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="//www.googletagmanager.com/gtag/js?id=UA-124498612-2"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c8dcf002e3cb41a603da7f0d485b5f0b"></script>
 <script src="https://urban-incard.github.io/common/swiper.min.js"></script>
 <script src="https://urban-incard.github.io/common/script.js"></script>
@@ -214,6 +209,20 @@
 
         $(".month").css("font-size", "32px")
     });
+    
+    Kakao.init('c8dcf002e3cb41a603da7f0d485b5f0b');
+    
+    function sendLink() {
+        Kakao.Link.sendCustom({
+          templateId: 38695,
+          templateArgs: {
+            title:
+              '판교 맛집에 들르다. 다양하고 풍부한 퓨전 한정식. 깔끔한 내부 인테리어 라이언',
+            description:
+              '부담없는 가격에 푸짐하게 즐기는 점심메뉴 런치한정식, 불고기정식, 돼지 김치찌개 등',
+          },
+        })
+      }
 </script>
 
 </html>
