@@ -19,8 +19,10 @@
     <!--Common's CSS-->
     <link rel="stylesheet" href="https://urban-incard.github.io/common/style.css">
     <!--type3 CSS-->
-    <link rel="stylesheet" href="https://urban-incard.github.io/type3/css/type3.css">
-
+    <link rel="stylesheet" href="https://urban-incard.github.io/type2/css/type2.css">
+    <style>
+        *{color:#000000;font-weight: bold;}
+    </style>
     <script>
         var gallery_url = [];
         //gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VUxLcpFK%2F5b1wK2m6lHeBp0XeTKd5W0%2Fi_atv61dp5wnvj.jpg");
@@ -38,25 +40,33 @@
 
 <body>
     <div class="wrap">
-        <div class="header" back="background-size: 150%;">
+        <div class="header">
             <div class="top">
-                <div class="name">송한규<span>그리고</span>조지훈</div>
-                <div class="pos">
-                    2020.11.14 저희 결혼식에 초대합니다. <br />아펠가모 공덕 마리에홀<br />14:00
+                <div class="name">
+                    송한규<span>그리고</span>조지훈
                 </div>
+                <div class="pos" style="font-weight:bold;font-size: 22px;">
+                    저희 아들딸 결혼합니다.<br /><br /><span style="font-weight:bold;">2020.11.14. 오후 2시</span><br /><br />아펠가모 공덕 7층 마리에홀
+                </div>
+
+                <div class="object">
+                    <img src="https://urban-incard.github.io/type2/2_top.png" style="width:65px;" />
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="https://shop-phinf.pstatic.net/20201014_174/1602650500491CXizo_JPEG/32-J66A9044-2_5x7.JPG?type=m600_talk" />
             </div>
         </div>
         <div class="contents">
             <div class="information">
+                <div class="parent" style="font-size:16px;">
+                    송종춘.김영아<span style="font-size:11px;">의 차남</span> 송한규<br /><br /> 조태원.이민옥<span style="font-size:11px;">의 장녀</span> 조지훈<br />
+                </div>
                 <div class="title">
                     <h2>INVITATION</h2>
                 </div>
                 <div class="info">
-                    저희 두 사람이<br/> 이제 믿음과 사랑으로<br/> 한 길을 가고자 합니다.<br/><br/> 지금까지 늘 곁에서 아껴주셨던<br/> 고마운 분들을 모시고<br/> 혼인의 예를 갖추어야 하나<br/> 부모님과 가족들만 모시고<br/> 작은 결혼식을 올리게 되었습니다.<br/><br/> 넓은 마음으로 양해 부탁드리며<br/> 저희 두 사람 축복하고 격려해주시면<br/> 더없는 기쁨으로 간직하고<br/> 예쁘게
-                    잘 살겠습니다.
-                </div>
-                <div class="parent" style="color:#000000;font-weight: bold;">
-                    송종춘.김영아의 차남 송한규<br /> 조태원.이민옥의 장녀 조지훈<br />
+                    11월의 아름다운 날,<br />확신을 주는 서로를 만나 평생을 함께 걷고자 합니다.<br />귀한 걸음 하시어 저희의 앞날을 축복해주시면<br/>더없이 큰 기쁨으로 간직하겠습니다.
                 </div>
 
                 <div class="name">
@@ -98,15 +108,15 @@
                 <div class="parent_money" style="font-size: 14px;    text-align: center;    padding: 0px 0px;font-weight:bold;">
                     <마음전하실곳><br/>
                     <img src="https://urban-incard.github.io/type2/2_top.png" style="width:30px;padding:30px;"/><br/>
-                    <a href="javascript:virtual('');" style="color:#1ebc91;text-decoration:none;font-weight:bold;padding: 10px;border: 1px solid #d2d2d2;">신랑측 계좌번호</a> &nbsp;
-                    <a href="javascript:virtual('신한은행 110-053-733952 조태원(신부)');" style="color:#ff6b9f;text-decoration:none;font-weight:bold;padding: 10px;border: 1px solid #d2d2d2;">신부측 계좌번호</a>
-                    <div class="virtual_wrap" style="padding:10px 0px;font-weight:bold;margin:10px;"></div>
+                    <a style="color:#1ebc91;text-decoration:none;font-weight:bold;padding: 10px;border: 1px solid #d2d2d2;">신랑측 계좌번호</a> &nbsp;
+                    <a style="color:#ff6b9f;text-decoration:none;font-weight:bold;padding: 10px;border: 1px solid #d2d2d2;">신부측 계좌번호</a>
+                    <div class="virtual_wrap" style="padding:10px 0px;font-weight:bold;margin:10px;">신한은행 110-053-733952 조태원(신부)</div>
                 </div>
             </div>
-            <div class="title">
+            <div class="title" style="display:none;">
                 <h2>GALLERY</h2>
             </div>
-            <div class="gallery">
+            <div class="gallery" style="display:none;">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper"></div>
@@ -119,7 +129,7 @@
                 </div>
                 <!-- Swiper -->
             </div>
-            <div class="calendar">
+            <div class="calendar" style="display: none;">
                 <div class="title">
                     <h2>CALENDAR</h>
                 </div>
@@ -130,7 +140,7 @@
                     <h2>LOCATION</h>
                 </div>
                 <div id="map"></div>
-                <div class="map_info">
+                <div class="map_info" style="font-size:16px;">
                     <span style="line-height:26px;">서울특별시 마포구마포대로 92 (도화동 25-13) 효성해링턴스퀘어B동 7층</span><br />
                     <span class="addr">아펠가모 공덕 마리에홀</span><br /><br />
                     <span>02-2197-0230</span>

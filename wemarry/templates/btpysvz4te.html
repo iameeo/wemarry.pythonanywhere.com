@@ -23,10 +23,16 @@
 
     <script>
         var gallery_url = [];
-        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VUxLcpFK%2F5b1wK2m6lHeBp0XeTKd5W0%2Fi_atv61dp5wnvj.jpg");
-        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VUw6AVfS%2FdfwsrVngb6vDkE3Lhv3BW0%2Fi_7zd5dozne1if1.jpg");
-        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVI0hBDS%2FxDFGDymbnbBunE8ymF7gJ0%2Fi_aasft4w5gy2t1.jpg");
-        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3U5QE6BgN%2FdSWgGqrF3DHhjaxvsXVqG1%2Fi_9j8o9bulufd11.jpg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVI0HDmO%2FuiS9wEFNudLy3yZKvn46v0%2Fi_dc19x9o48o2j1.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVHnbMKo%2Fqj293v9kzX9K5Kc8KesGPK%2Fi_c3y894wvyovx.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3WT9v0dcF%2FQ3o8u4Vmn6He338TckTUb0%2Fi_1fa79n5xf8ih1.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVH1Ni4L%2FPVhknrNnseNgwt6ctPg6TK%2Fi_nl0j3kwzvrgj.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3WUc7kwJj%2FrkdP9uWf0E6tfVGS2xPgLk%2Fi_53v7ae0flc0p1.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3WUcfbXno%2Fi7r16hbp3L7kZ7EconZpk0%2Fi_0l4qe0a5odjv.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3WUcGgydu%2FfG1uHFcSpIMrukfMKKHTf0%2Fi_nq3uuk85dxkr1.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVF3YACS%2Fs4HokIKQODYTEd0kB14Pe1%2Fi_vffjlgxlg8ln.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3VVJL5yNH%2FHIK7ZGSCqIRDjr9Re7VVO0%2Fi_c4i20sk9zyqc1.jpeg");
+        gallery_url.push("https://t1.kakaocdn.net/thumb/R2048x0.fjpg/?fname=http%3A%2F%2Fdn-m.talk.kakao.com%2Ftalkm%2Fbl3WUbm3awL%2FKbpehpMKywMIDl32uNU7Fk%2Fi_h9uod2fsjvwo1.jpeg");
 
         var mname = "이주현";
         var wname = "이소아";
@@ -224,6 +230,13 @@
 
         $(".month").css("font-size", "32px")
     });
+    
+var destination = '라마다송도호텔';
+
+Kakao.init('c8dcf002e3cb41a603da7f0d485b5f0b');
+function kNavi(){ Kakao.Navi.start({ name: destination, x: lng, y: lat, coordType: 'wgs84'});}
+function tmap() { window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx69b0c8b4ae0f42a8aecea5d46eb2c8df&name="+destination+"&lon="+lng+"&lat="+lat);}
+function nNavi(){ window.open("https://m.map.naver.com/directions/?"+'ename='+destination+"&ex="+lng+"&ey="+lat);}
 </script>
 
 </html>
