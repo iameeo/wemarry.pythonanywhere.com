@@ -90,23 +90,19 @@
             <div class="title">
                 <h2>GALLERY</h2>
             </div>
-            <div class="gallery" style="height:500px;">
+            <div class="gallery">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper"></div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next swiper-button-white"></div>
                     <div class="swiper-button-prev swiper-button-white"></div>
-<!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-container gallery-thumbs" style="display:none;">
+                <div class="swiper-container gallery-thumbs">
                     <div class="swiper-wrapper"></div>
                 </div>
                 <!-- Swiper -->
             </div>
-                <ul class="tttt" style="display:none;text-align:center;overflow:hidden;width:320px;margin:0 auto;">
-                </ul>
             <div class="calendar">
                 <div class="title">
                     <h2>CALENDAR</h>
@@ -124,10 +120,6 @@
                     <span>031-241-6000</span>
                 </div>
                 <style>
-
-                    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:3px;}
-                    .swiper-pagination-bullet{background:#8c8c8c;}
-
                     .map_text {}
 
                     .map_text span {
@@ -199,40 +191,7 @@
 <script>
     $(function() {
 
-        var html = "";
-        var html_thumb = "";
-        for (var i = 0; i < gallery_url.length; i++) {
-            html += '<div class="swiper-slide" style="background-position: center;    background-size: contain;    background-repeat: no-repeat;background-image:url(' + gallery_url[i] + ')"></div>';
-            html_thumb += '<li style="width:95px;height:95px;float:left;margin:5px;" onclick=location.href="'+ gallery_url[i] +'";><img src='+gallery_url[i]+' style="width:100%;height:100%;"></li>';
-        }
-
-        $(".swiper-wrapper").eq(0).html(html);
-        $(".tttt").html(html_thumb);
-
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 5,
-            pagination: {
-                    el: '.swiper-pagination',
-                  },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function() {
-            var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
-        });
-
-        $(".swiper-wrapper").css("width", 999999);
-
-        init_blog();
-
-        $(".swiper-wrapper").eq(0).find(".swiper-slide").each(function(){
-            //$(".tttt").append("<img style='width:100px;' src="+$(this).css("background-image").replace("url(","").replace(")","")+"/>")
-        });
-
-
+        gallery_url_set(gallery_url);
 
         calendar_set(mname, wname, weddingDate);
 
