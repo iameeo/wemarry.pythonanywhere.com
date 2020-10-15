@@ -138,7 +138,7 @@
         <div class="footer">
             <div class="sns">
                 <ul>
-                    <li>
+                    <li style="float:none;">
                         <a id="kakao-link-btn" href="javascript:sendLink()"><img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /></a>
                     </li>
                 </ul>
@@ -168,9 +168,9 @@
 
         $(".month").css("font-size", "32px")
     });
-    
+
     Kakao.init('c8dcf002e3cb41a603da7f0d485b5f0b');
-    
+
     function sendLink() {
         Kakao.Link.sendCustom({
           templateId: 38695,

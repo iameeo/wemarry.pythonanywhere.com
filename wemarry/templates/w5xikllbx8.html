@@ -179,7 +179,7 @@
         <div class="footer">
             <div class="sns">
                 <ul>
-                    <li>
+                    <li style="float:none;">
                         <a id="kakao-link-btn" href="javascript:sendLink()"><img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" /></a>
                     </li>
                 </ul>
@@ -209,12 +209,12 @@
 
         $(".month").css("font-size", "32px")
     });
-    
+
     Kakao.init('c8dcf002e3cb41a603da7f0d485b5f0b');
-    
+
     function sendLink() {
         Kakao.Link.sendCustom({
-          templateId: 38695,
+          templateId: 38709,
           templateArgs: {
             title:
               '판교 맛집에 들르다. 다양하고 풍부한 퓨전 한정식. 깔끔한 내부 인테리어 라이언',

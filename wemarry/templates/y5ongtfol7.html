@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>[이주현♥이소아] 결혼 합니다.</title>
+    <title>[이주현❤️이소아] 12월5일 결혼합니다!</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -46,9 +46,9 @@
     <div class="wrap">
         <div class="header" back="background-size: 150%;">
             <div class="top">
-                <div class="name">이주현<span>그리고</span>이소아</div>
-                <div class="pos">
-                    2020.12.05 저희 결혼식에 초대합니다. <br />라마다송도호텔 다빈치홀<br />15:00
+                <div class="name" style="margin-top: -55px;">이주현<span>그리고</span>이소아</div>
+                <div class="pos" style="font-size:14px;font-weight: bold;padding-top: 50px;">
+                    2020.12.05 저희 결혼식에 초대합니다. <br /><br />라마다송도호텔 다빈치홀 / 오후 3시
                 </div>
             </div>
         </div>
@@ -58,10 +58,20 @@
                     <h2>INVITATION</h2>
                 </div>
                 <div class="info">
-                    저희 두 사람이<br/> 이제 믿음과 사랑으로<br/> 한 길을 가고자 합니다.<br/><br/> 지금까지 늘 곁에서 아껴주셨던<br/> 고마운 분들을 모시고<br/> 혼인의 예를 갖추어야 하나<br/> 부모님과 가족들만 모시고<br/> 작은 결혼식을 올리게 되었습니다.<br/><br/> 넓은 마음으로 양해 부탁드리며<br/> 저희 두 사람 축복하고 격려해주시면<br/> 더없는 기쁨으로 간직하고<br/> 예쁘게
-                    잘 살겠습니다.
+                    모시는 글<br/><br/>
+
+새로운 마음과 새 의미를 간직하며<br/>
+저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
+좋은 꿈, 바른 뜻으로 올바르게 살 수 있도록<br/>
+축복과 격려 주시면 더 없는 기쁨으로<br/>
+간직하겠습니다.<br/><br/>
+
+코로나19로 고민이 많았지만,<br/>
+예정대로 식을 진행하게 되었습니다.<br/>
+참석하지 못하시더라도<br/>
+축복해주시는 마음만은 잊지 않고 잘 살겠습니다.
                 </div>
-                <div class="parent" style="color:#000000;font-weight: bold;">
+                <div class="parent" style="color:#000000;font-weight: bold;font-size:15px;line-height: 25px;">
                     이철수.김은미의 장남 이주현<br /> 이잠철.이순희의 장녀 이소아<br />
                 </div>
 
@@ -179,7 +189,7 @@
                     <div style="padding:10px 0px;">
                         <span>셔틀버스 이용시</span>
                         <p style="padding:5px 0px;line-height:24px;">
-                            ① 동춘역 5번 출구 (셔틀 운행시간 : 14시30분, 14시50분)
+                            ① 동춘역 5번 출구<br/>(셔틀 운행시간 : 14시30분, 14시50분)
                         </p>
                     </div>
                 </div>
@@ -217,12 +227,20 @@
 <script>
     $(function() {
         gallery_url_set(gallery_url);
+        
+        $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function() {
+            var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
+            //location.href = img_url;
+        });
 
         calendar_set(mname, wname, weddingDate);
 
         map_set(lat, lng);
 
         $(".month").css("font-size", "32px")
+        $(".day.event").parent().css("position","relative")
+        $(".day.event").parent().append("<span style='font-size:11px;position: absolute;    bottom: -5px;    left: 5px;    color: #b74343;    font-weight: bold;'>오후 3시</span>")
+
     });
 
 var destination = '라마다송도호텔';
