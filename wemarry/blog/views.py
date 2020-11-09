@@ -146,3 +146,8 @@ def w5xikllbx8(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'w5xikllbx8.html', context)
+
+def zkm2jy93w7(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'zkm2jy93w7.html', context)
