@@ -156,3 +156,8 @@ def exgxt9nf6u(request):
     if request.method == 'GET':
         context = {}
         return render(request, 'exgxt9nf6u.html', context)
+
+def f2fh3bwvz9(request):
+    if request.method == 'GET':
+        context = {}
+        return render(request, 'f2fh3bwvz9.html', context)
